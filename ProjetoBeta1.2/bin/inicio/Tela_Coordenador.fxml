@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inicio.CoordenadorController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#742227" height="29.0" layoutY="148.0" stroke="#742227" strokeType="INSIDE" width="740.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="9.28" radius="5.605" width="15.14" />
+         </effect>
+      </Rectangle>
+      <Label alignment="CENTER" layoutX="262.0" layoutY="182.0" text="Levantamento de Dúvidas" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="225.0" text="Filtrar Por:" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="select" layoutX="118.0" layoutY="222.0" onAction="#prof" prefHeight="29.0" prefWidth="120.0" promptText="Selecione..." style="-fx-background-radius: 10;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="6.34" radius="3.405" width="9.28" />
+         </effect>
+      </ComboBox>
+      <JFXButton buttonType="RAISED" layoutX="388.0" layoutY="144.0" onAction="#relatorio" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: #742227;" text="Exibir Relatórios" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="12.21" radius="5.605" width="12.21" />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="18.0" layoutY="145.0" onAction="#retornar" prefHeight="17.0" prefWidth="161.0" style="-fx-background-color: #742227;" text="Finalizar Sessão" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="12.21" radius="5.605" width="12.21" />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="565.0" layoutY="144.0" onAction="#dia" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: #742227;" text="Dias/Horários" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="12.21" radius="5.605" width="12.21" />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="49.0" fitWidth="200.0" layoutX="24.0" layoutY="68.0">
+         <image>
+            <Image url="@logo_undb.png" />
+         </image>
+      </ImageView>
+      <PieChart fx:id="grafico" labelLineLength="15.0" layoutX="14.0" layoutY="248.0" legendSide="LEFT" legendVisible="false" prefHeight="289.0" prefWidth="530.0" title="Representação Gráfica">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></PieChart>
+      <ComboBox fx:id="select2" disable="true" layoutX="251.0" layoutY="222.0" onAction="#combo2" prefHeight="29.0" prefWidth="181.0" promptText="Todos" style="-fx-background-radius: 10;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="6.34" radius="3.405" width="9.28" />
+         </effect>
+      </ComboBox>
+      <Label fx:id="status" alignment="CENTER" layoutX="99.0" layoutY="515.0" prefHeight="23.0" prefWidth="375.0" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

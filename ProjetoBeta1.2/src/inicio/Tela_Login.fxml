@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inicio.Login_alunoController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#742227" height="29.0" layoutY="128.0" stroke="#742227" strokeType="INSIDE" width="740.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="9.28" radius="5.605" width="15.14" />
+         </effect>
+      </Rectangle>
+      <Label alignment="CENTER" layoutX="282.0" layoutY="177.0" text="Seja Bem-Vindo" textFill="#742227">
+         <font>
+            <Font name="Arial Narrow Bold" size="25.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="172.0" layoutY="219.0" text="Para entrar no Sistema digite abaixo seu" textFill="#742227">
+         <font>
+            <Font name="Arial Narrow Bold" size="25.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="259.0" layoutY="249.0" text="Usuário e sua Senha" textFill="#742227">
+         <font>
+            <Font name="Arial Narrow Bold" size="25.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <JFXTextField fx:id="matricula" focusColor="#742227" labelFloat="true" layoutX="249.0" layoutY="315.0" maxWidth="243.0" minWidth="134.0" prefHeight="57.0" prefWidth="243.0" promptText="Usuário">
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXPasswordField fx:id="nascimento" focusColor="#742227" labelFloat="true" layoutX="249.0" layoutY="400.0" maxWidth="243.0" minWidth="134.0" prefHeight="57.0" prefWidth="243.0" promptText="Senha">
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXPasswordField>
+      <JFXButton buttonType="RAISED" defaultButton="true" layoutX="492.0" layoutY="474.0" onAction="#entrar" prefHeight="36.0" prefWidth="85.0" style="-fx-background-color: #742227;" text="Entrar" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="cadastro" buttonType="RAISED" layoutX="371.0" layoutY="125.0" onAction="#cadastrar" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: #742227;" text="Cadastro" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="641.0" layoutY="125.0" onAction="#ajuda" prefHeight="36.0" prefWidth="85.0" style="-fx-background-color: #742227;" text="Ajuda" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="49.0" fitWidth="200.0" layoutX="24.0" layoutY="68.0">
+         <image>
+            <Image url="@logo_undb.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="125.0" onAction="#voltar" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: #742227;" text="Fechar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <ComboBox fx:id="select" layoutX="259.0" layoutY="480.0" prefHeight="25.0" prefWidth="175.0" />
+      <Label layoutX="124.0" layoutY="481.0" text="Tipo de usuário:" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="492.0" layoutY="125.0" onAction="#site" prefHeight="36.0" prefWidth="128.0" style="-fx-background-color: #742227;" text="Acesse o Site" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

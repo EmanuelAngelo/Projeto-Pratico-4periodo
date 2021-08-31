@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inicio.DescricaoController">
+   <children>
+      <JFXButton buttonType="RAISED" defaultButton="true" layoutX="456.0" layoutY="357.0" onAction="#salvar" prefHeight="42.0" prefWidth="85.0" style="-fx-background-color: #742227;" text="Salvar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <ComboBox fx:id="status" layoutX="112.0" layoutY="149.0" onAction="#adiamento" prefHeight="29.0" prefWidth="165.0" promptText="Aguardando avaliação" style="-fx-background-radius: 10;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="6.34" radius="3.405" width="9.28" />
+         </effect>
+      </ComboBox>
+      <Label layoutX="31.0" layoutY="152.0" text="Status:" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="30.0" text="Aluno(a):" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="nome" layoutX="109.0" layoutY="27.0" prefHeight="30.0" prefWidth="369.0" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="des" focusColor="#742227" labelFloat="true" layoutX="31.0" layoutY="228.0" maxWidth="492.0" minWidth="492.0" prefHeight="108.0" prefWidth="492.0" promptText="Descrição (max. 100 caracteres)" unFocusColor="#4d4d4d">
+         <font>
+            <Font name="Arial Narrow Bold" size="17.0" />
+         </font>
+      </JFXTextArea>
+      <DatePicker fx:id="data" layoutX="377.0" layoutY="152.0" prefHeight="25.0" prefWidth="158.0" visible="false" />
+      <Label fx:id="lbl_data" layoutX="321.0" layoutY="153.0" text="Data:" textFill="#742227" visible="false">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" defaultButton="true" layoutX="18.0" layoutY="357.0" onAction="#deletar" prefHeight="42.0" prefWidth="206.0" style="-fx-background-color: #742227;" text="Cancelar Agendamento" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="not" buttonType="RAISED" layoutX="334.0" layoutY="87.0" onAction="#enviar" prefHeight="42.0" prefWidth="189.0" style="-fx-background-color: #742227;" text="Notificar via E-mail" textFill="WHITE" visible="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="33.0" layoutY="65.0" text="Curso:" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="curso" layoutX="96.0" layoutY="65.0" prefHeight="23.0" prefWidth="206.0" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="97.0" text="Assunto:" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="assunto" layoutX="113.0" layoutY="97.0" prefHeight="23.0" prefWidth="189.0" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

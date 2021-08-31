@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#742227" height="29.0" layoutY="148.0" stroke="#742227" strokeType="INSIDE" width="740.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="9.28" radius="5.605" width="15.14" />
+         </effect>
+      </Rectangle>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="297.0" text="Duvida Sobre:" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="132.0" layoutY="298.0" prefHeight="29.0" prefWidth="112.0" promptText="Selecione" style="-fx-background-radius: 10;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="6.34" radius="3.405" width="9.28" />
+         </effect>
+      </ComboBox>
+      <Label alignment="CENTER" layoutX="15.0" layoutY="340.0" text="Disciplina:" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" disable="true" layoutX="104.0" layoutY="340.0" prefHeight="29.0" prefWidth="147.0" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="15.0" layoutY="379.0" text="Professor:" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox disable="true" layoutX="104.0" layoutY="376.0" prefHeight="29.0" prefWidth="132.0" style="-fx-background-radius: 10;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="6.34" radius="3.405" width="9.28" />
+         </effect>
+      </ComboBox>
+      <Label alignment="CENTER" disable="true" layoutX="97.0" layoutY="419.0" prefHeight="29.0" prefWidth="147.0" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="324.0" layoutY="297.0" text="Data:" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="372.0" layoutY="296.0" prefHeight="29.0" prefWidth="159.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="6.0" radius="2.5" width="6.0" />
+         </effect>
+      </DatePicker>
+      <JFXButton buttonType="RAISED" layoutX="23.0" layoutY="476.0" prefHeight="38.0" prefWidth="140.0" style="-fx-background-color: #742227;" text="Voltar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="12.21" radius="5.605" width="12.21" />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="181.0" layoutY="476.0" prefHeight="38.0" prefWidth="167.0" style="-fx-background-color: #742227;" text="Agendar Encontro" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="12.21" radius="5.605" width="12.21" />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="287.0" layoutY="188.0" text="Agendamentos" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="248.0" layoutY="218.0" text="Tenha uma boa revisão" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="49.0" fitWidth="200.0" layoutX="14.0" layoutY="58.0">
+         <image>
+            <Image url="@imagens_/logo_undb.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

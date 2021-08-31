@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inicio.CadastroController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#742227" height="29.0" layoutY="138.0" stroke="#742227" strokeType="INSIDE" width="740.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="9.28" radius="5.605" width="15.14" />
+         </effect>
+      </Rectangle>
+      <JFXTextField fx:id="nome" focusColor="#742227" labelFloat="true" layoutX="14.0" layoutY="256.0" maxWidth="243.0" minWidth="134.0" prefHeight="57.0" prefWidth="243.0" promptText="Nome">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="matricula" focusColor="#742227" labelFloat="true" layoutX="14.0" layoutY="341.0" maxWidth="243.0" minWidth="134.0" prefHeight="57.0" prefWidth="243.0" promptText="Matrícula">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXTextField>
+      <Label alignment="CENTER" layoutX="292.0" layoutY="196.0" text="Seja Bem-Vindo" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="466.0" layoutY="288.0" text="Curso:" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="466.0" layoutY="358.0" text="Período:" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="210.0" layoutY="226.0" text="Faça seu cadastro com Atenção!" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="25.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="curso" layoutX="543.0" layoutY="285.0" prefHeight="29.0" prefWidth="183.0" promptText="Selecione" style="-fx-background-radius: 10;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="6.34" radius="3.405" width="9.28" />
+         </effect>
+      </ComboBox>
+      <ComboBox fx:id="periodo" layoutX="555.0" layoutY="355.0" prefHeight="29.0" prefWidth="120.0" promptText="Selecione" style="-fx-background-radius: 10;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="6.34" radius="3.405" width="9.28" />
+         </effect>
+      </ComboBox>
+      <JFXButton buttonType="RAISED" layoutX="173.0" layoutY="134.0" onAction="#cadastrar" prefHeight="38.0" prefWidth="138.0" style="-fx-background-color: #742227;" text="Cadastrar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="12.21" radius="5.605" width="12.21" />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="135.0" onAction="#voltar" prefHeight="36.0" prefWidth="138.0" style="-fx-background-color: #742227;" text="Voltar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="12.21" radius="5.605" width="12.21" />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="49.0" fitWidth="200.0" layoutX="24.0" layoutY="68.0">
+         <image>
+            <Image url="@logo_undb.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="nascimento" focusColor="#742227" labelFloat="true" layoutX="14.0" layoutY="431.0" maxWidth="290.0" minWidth="134.0" prefHeight="57.0" prefWidth="290.0" promptText="Data de nascimento  (ex. 21031997)">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="email" focusColor="#742227" labelFloat="true" layoutX="466.0" layoutY="431.0" maxWidth="243.0" minWidth="134.0" prefHeight="57.0" prefWidth="243.0" promptText="E-mail">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

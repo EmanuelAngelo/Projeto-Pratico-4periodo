@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#742227" height="29.0" layoutX="1.0" layoutY="148.0" stroke="#742227" strokeType="INSIDE" width="740.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="9.28" radius="5.605" width="15.14" />
+         </effect>
+      </Rectangle>
+      <Label alignment="CENTER" layoutX="218.0" layoutY="187.0" text="Seus Agendamentos Professor" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="25.0" />
+         </font>
+      </Label>
+      <TableView layoutX="3.0" layoutY="223.0" prefHeight="311.0" prefWidth="734.0">
+        <columns>
+          <TableColumn prefWidth="66.0" text="Matricula" />
+          <TableColumn prefWidth="169.0" text="Nome" />
+            <TableColumn prefWidth="167.0" text="Dúvida" />
+            <TableColumn prefWidth="84.0" text="Data" />
+            <TableColumn prefWidth="184.0" text="Curso" />
+            <TableColumn prefWidth="63.0" text="Período" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="423.0" layoutY="145.0" prefHeight="36.0" prefWidth="155.0" style="-fx-background-color: #742227;" text="Finalizar Sessão" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="12.21" radius="5.605" width="12.21" />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="588.0" layoutY="145.0" prefHeight="36.0" prefWidth="141.0" style="-fx-background-color: #742227;" text="Gerar Relatorio" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="12.21" radius="5.605" width="12.21" />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <ProgressIndicator layoutX="675.0" layoutY="183.0" prefHeight="38.0" prefWidth="54.0" progress="0.0" />
+      <ImageView fitHeight="49.0" fitWidth="200.0" layoutX="24.0" layoutY="68.0">
+         <image>
+            <Image url="@imagens_/logo_undb.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

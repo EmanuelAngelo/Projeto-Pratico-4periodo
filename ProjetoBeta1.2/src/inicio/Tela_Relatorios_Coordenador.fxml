@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="1032.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inicio.Co_RelatoriosController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#742227" height="29.0" layoutX="-2.0" layoutY="153.0" stroke="#742227" strokeType="INSIDE" width="1039.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="9.28" radius="5.605" width="15.14" />
+         </effect>
+      </Rectangle>
+      <Label alignment="CENTER" layoutX="466.0" layoutY="196.0" text="Relatórios" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="203.0" text="Professor:" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="professor" layoutX="110.0" layoutY="200.0" onAction="#combo" prefHeight="29.0" prefWidth="138.0" promptText="Selecione..." style="-fx-background-radius: 10;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="6.34" radius="3.405" width="9.28" />
+         </effect>
+      </ComboBox>
+      <TableView fx:id="tabela" layoutY="238.0" prefHeight="297.0" prefWidth="1032.0">
+        <columns>
+            <TableColumn fx:id="matricula" editable="false" prefWidth="75.0" resizable="false" text="Matricula" />
+          <TableColumn fx:id="nome" editable="false" prefWidth="216.0" resizable="false" text="Nome" />
+            <TableColumn fx:id="duvida" editable="false" minWidth="0.0" prefWidth="124.0" resizable="false" text="Duvida" />
+            <TableColumn fx:id="data" editable="false" prefWidth="86.0" resizable="false" text="Data" />
+          <TableColumn fx:id="curso" editable="false" prefWidth="142.0" resizable="false" text="Curso" />
+            <TableColumn fx:id="periodo" editable="false" prefWidth="85.0" resizable="false" text="Período" />
+            <TableColumn fx:id="descricao" editable="false" prefWidth="303.0" resizable="false" text="Descrição" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="28.0" layoutY="150.0" onAction="#retornar" prefHeight="0.0" prefWidth="138.0" style="-fx-background-color: #742227;" text="Voltar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="12.21" radius="5.605" width="12.21" />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="49.0" fitWidth="200.0" layoutX="24.0" layoutY="68.0">
+         <image>
+            <Image url="@logo_undb.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="880.0" layoutY="194.0" onAction="#gerar" prefHeight="36.0" prefWidth="138.0" style="-fx-background-color: #742227;" text="Gerar Arquivo" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="12.21" radius="5.605" width="12.21" />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <ProgressIndicator fx:id="progresso" layoutX="560.0" layoutY="188.0" prefHeight="49.0" prefWidth="77.0" progress="0.0" visible="false" />
+      <ComboBox fx:id="mes" layoutX="673.0" layoutY="199.0" prefHeight="25.0" prefWidth="77.0" />
+      <ComboBox fx:id="ano" layoutX="791.0" layoutY="199.0" prefHeight="25.0" prefWidth="77.0" />
+      <Label alignment="CENTER" layoutX="637.0" layoutY="201.0" text="Mês:" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="755.0" layoutY="200.0" text="Ano:" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

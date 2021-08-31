@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="1035.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inicio.formulaController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#742227" height="29.0" layoutY="148.0" stroke="#742227" strokeType="INSIDE" width="1035.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="9.28" radius="5.605" width="15.14" />
+         </effect>
+      </Rectangle>
+      <Label alignment="CENTER" layoutX="19.0" layoutY="233.0" text="Duvida Sobre:" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="duvida" layoutX="144.0" layoutY="230.0" onAction="#procura" prefHeight="29.0" prefWidth="217.0" promptText="Selecione..." style="-fx-background-radius: 10;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="6.34" radius="3.405" width="9.28" />
+         </effect>
+      </ComboBox>
+      <Label alignment="CENTER" layoutX="15.0" layoutY="275.0" text="Disciplina:" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="disciplina" alignment="CENTER" disable="true" layoutX="105.0" layoutY="272.0" prefHeight="29.0" prefWidth="147.0" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="15.0" layoutY="313.0" text="Professor:" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="professor" disable="true" layoutX="105.0" layoutY="310.0" onAction="#horario" prefHeight="29.0" prefWidth="132.0" promptText="Selecione..." style="-fx-background-radius: 10;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="6.34" radius="3.405" width="9.28" />
+         </effect>
+      </ComboBox>
+      <Label fx:id="horario" alignment="BASELINE_LEFT" disable="true" layoutX="12.0" layoutY="397.0" prefHeight="29.0" prefWidth="333.0" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="362.0" text="Data:" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="data" layoutX="65.0" layoutY="359.0" prefHeight="29.0" prefWidth="159.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow height="6.0" radius="2.5" width="6.0" />
+         </effect>
+      </DatePicker>
+      <JFXButton fx:id="retornar" buttonType="RAISED" layoutX="19.0" layoutY="145.0" onAction="#inicio" prefHeight="23.0" prefWidth="159.0" style="-fx-background-color: #742227;" text="Finalizar Sessão" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="12.21" radius="5.605" width="12.21" />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="entra" buttonType="RAISED" layoutX="205.0" layoutY="435.0" onAction="#agendar" prefHeight="23.0" prefWidth="167.0" style="-fx-background-color: #742227;" text="Agendar Encontro" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="12.21" radius="5.605" width="12.21" />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="568.0" layoutY="191.0" text="Agendamentos Pendentes" textFill="#742227">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="49.0" fitWidth="200.0" layoutX="14.0" layoutY="58.0">
+         <image>
+            <Image url="@logo_undb.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="limpar" buttonType="RAISED" layoutX="15.0" layoutY="435.0" onAction="#pegar" prefHeight="23.0" prefWidth="167.0" style="-fx-background-color: #742227;" text="Limpar Valores" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="12.21" radius="5.605" width="12.21" />
+         </effect>
+         <font>
+            <Font name="Arial Narrow Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tabela" layoutX="410.0" layoutY="230.0" onMouseClicked="#cancelar" prefHeight="251.0" prefWidth="607.0">
+        <columns>
+          <TableColumn fx:id="assunto" prefWidth="180.0" text="Assunto" />
+          <TableColumn fx:id="professor2" prefWidth="104.0" text="Professor" />
+            <TableColumn fx:id="data2" prefWidth="76.0" text="Data" />
+            <TableColumn fx:id="horario2" prefWidth="83.0" text="Horário" />
+            <TableColumn fx:id="cod1" prefWidth="59.0" text="Cód." visible="false" />
+            <TableColumn fx:id="status" prefWidth="163.0" text="Status" />
+        </columns>
+      </TableView>
+      <Separator layoutX="388.0" layoutY="179.0" orientation="VERTICAL" prefHeight="310.0" prefWidth="9.0" />
+   </children>
+</AnchorPane>
